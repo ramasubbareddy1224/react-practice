@@ -4,9 +4,6 @@ import './App.css';
 import Header from './Header';
 import {
   BrowserRouter ,
-  Route,
-  Switch,
-  NavLink ,
   Link
 } from 'react-router-dom'
 import Footer from './Footer';
@@ -40,13 +37,13 @@ class Home extends Component {
   render() {
     return (
       <BrowserRouter>
-      <div className="App">
-         {/* state params  */}
+      <div className="App"> 
         <Header company={this.state.company} location={this.state.location} phonenum={this.state.phonenum} companyChange={this.updateCompany} ></Header>
         <p style={{color:"red",backgroundColor:'yellow'}}>This is Home Component</p>
         <p style={PTageStyle}>This is Home2 Component</p>
         <button className="btn btn-primary" onClick={this.clickUpdateStateButton}>Update State</button>
-        <Link  to='/about'>Go to About</Link>
+        <Link  to='/about'>Go to About</Link>   
+        <Link  to='/user'>Go to User</Link>      
         <Routes></Routes>
       </div>
       </BrowserRouter>

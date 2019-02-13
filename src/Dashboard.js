@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class About extends Component {
+class Dashboard extends Component {
   render() {
     return (
       <div>
-        <p>This is About Component</p>
+       <p>This is Dashboard</p>
       </div>
     );
   }
 }
 
-export default About;
+export default Dashboard;
