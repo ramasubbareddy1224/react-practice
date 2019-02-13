@@ -3,6 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 class Header extends Component {
+ 
+  constructor(props)
+  {
+    super(props);
+    this.updateCompany=this.updateCompany.bind(this);
+  }
+
+  updateCompany(){
+       this.props.companyChange();
+  }
+
   render() {
     return (
       <div className="App">
@@ -36,7 +47,7 @@ class Header extends Component {
         </li>
       </ul>      
       <ul className="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><a href="#" onClick={this.updateCompany}>Update company</a></li>
         <li className="dropdown">
           <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span className="caret"></span></a>
           <ul className="dropdown-menu">
