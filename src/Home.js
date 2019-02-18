@@ -43,7 +43,8 @@ class Home extends Component {
         <p style={PTageStyle}>This is Home2 Component</p>
         <button className="btn btn-primary" onClick={this.clickUpdateStateButton}>Update State</button>
         <Link  to='/about'>Go to About</Link>   
-        <Link  to='/user'>Go to User</Link>      
+        <Link  to='/user'>Go to User</Link> 
+        <Link to="/employee">Go to Employee Form</Link>     
         <Routes></Routes>
       </div>
       </BrowserRouter>
