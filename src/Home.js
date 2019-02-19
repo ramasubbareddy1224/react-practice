@@ -45,7 +45,7 @@ class Home extends Component {
         <Link  to='/about'>Go to About</Link>   
         <Link  to='/user'>Go to User</Link> 
         <Link to="/employee">Go to Employee Form</Link> 
-        <Link to="/apitest">Load API Data</Link>     
+        <Link to="/userapi">Load Users from API</Link>    
         <Routes></Routes>
       </div>
       </BrowserRouter>

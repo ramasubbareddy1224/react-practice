@@ -9,6 +9,7 @@ import Dashboard from './Dashboard';
 import User from './User';
 import Employee from './Employee';
 import ApiTest from './ApiTest';
+import UserApi from './UserApi';
 
   export default ()=>(
       <Switch>
@@ -16,6 +17,6 @@ import ApiTest from './ApiTest';
           <Route path="/contact" component={Contact}></Route>
           <Route path="/user" component={User}></Route>
           <Route path="/employee" component={Employee}></Route>
-          <Route path="/apitest" component={ApiTest}></Route>
+          <Route path="/userapi" component={UserApi}></Route>
       </Switch>
   )
